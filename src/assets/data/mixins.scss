@@ -1,0 +1,69 @@
+@mixin headline-big {
+    font-family: 'PT Serif';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 51.87px, 50.4px;
+}
+
+@mixin headline-small {
+    font-family: 'PT Serif';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+}
+
+@mixin {
+    font-family: 'PT Serif';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+
+@mixin {
+    font-family: 'PT Serif';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+@mixin {
+    font-family: 'PT serif';
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.6px;
+}
+
+@mixin {
+    font-family: 'PT Serif';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35.2px, 26.4px;
+}
+
+@mixin {
+    font-family: 'Work Sans';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+@mixin {
+    font-family: 'Work Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+}
+
+@mixin {
+    font-family: 'Work sans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22.4px, 16.8px;
+}
+
+@mixin {
+    font-family: 'Work Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px, 14.4px;
+}

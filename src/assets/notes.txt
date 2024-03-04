@@ -1,0 +1,106 @@
+ANTECKNINGAR!
+INDIVIDUELL UPPGIFT FRONTENDRAMVERK
+
+	Github
+		workflow?
+		pull request
+		pages
+			Landing -
+				icon
+				company name
+				idea
+				background
+				animation*
+			menu -
+				header
+				headline
+				list -
+					icons with onlick addfunction
+					names and beans
+					price
+					footer
+			about -
+				header
+				headline
+				ingress
+				main text
+				icon
+				founder
+				title
+				footer
+			cart
+				popup from icon! -
+					healine
+					items in cart
+					price
+					quantity and options to remove or add
+					total - price
+					button to go to registry
+			status - 
+				order number
+				icon of drone
+				headline
+				estimated time for delivery
+				button to go back?
+			profile - login -
+				popup block-
+					icon
+					healine
+					ingress
+					form: name
+					form: epost
+					GDPR ok checkbox
+					button to proceed
+			profile -
+				header
+				icon - profile pic
+				name
+				e-mail
+				orderhistory
+				orders - date and price
+				total spent
+			NAV
+				Meny - med path
+				Vårt Kaffe - med path
+				Min profil - med path
+				orderstatus - med path
+			Errorpage
+				satta stil och färger. 
+				hitta på layout
+
+				
+		
+	VS Code
+		typescript
+		definiera alla types, inga : any
+		vettiga variabler
+		vettiga klassnamn BEM
+		
+		
+Fonts? 
+		PT Serif 	- rubriker
+		Work Sans 	- brödtext, ingress, underrubrik
+
+		sizes:	line height:		weight:
+		42px	51.87px 50.4px		700
+		36px	43.2px			700
+		32px	38.4px			700
+		24px	28.8px			700
+		23px 	27.6px			700
+		22px	35.2px 26.4px		700
+		21px	25.2px			400(400)
+		14px	22.4px 16.8px		600
+		12px	15.6px 14.4px		400
+	
+	
+
+
+	colors
+	Airbean - brown		rgba(47, 41, 38, 1)
+	Airbean - dark green	rgba(56, 132, 109, 1) rgba(14, 146, 125, 1)
+	Airbean - light green	rgba(88, 191, 148, 1)
+	Airbean - pink		rgba(243, 228, 225, 1)
+	Airbean - orange	rgba(229, 103, 78, 1)
+	white - 		rgba(255, 255, 255, 1)
+
+	
