@@ -1,6 +1,17 @@
 ANTECKNINGAR!
 INDIVIDUELL UPPGIFT FRONTENDRAMVERK
 
+API
+	https://airbean-api-xjlcn.ondigitalocean.app/
+		GET - /api/beans -> kaffemeny
+		POST - /api/beans/order -> lägger en order
+		GET - /api/beans/order/status/{ordernummber} -> hämta pågående beställning
+		
+		POST - /api/user/signup -> skapa ett konto
+		POST - /api/user/lopgin -> logga in
+		GET - /api/user/history -> hämta orderhistorik
+		GET - /api/user/status -> kollar om header-token är giltig eller ej.
+
 	Github
 		workflow?
 		pull request
@@ -102,5 +113,19 @@ Fonts?
 	Airbean - pink		rgba(243, 228, 225, 1)
 	Airbean - orange	rgba(229, 103, 78, 1)
 	white - 		rgba(255, 255, 255, 1)
+
+
+
+
+
+Började att göra ett github repo och koppla det med vsCode.
+städade ur all react/vite placeholder kod.
+Gjorde ett GitHub projekt, med kanban board och items/cards på.
+Gjorde alla filer och komponeneter som vi behöver för projektet.
+gjorde filer med constanter som vi kan kalla på, typ API, types och andra.
+Gjorde en flowchart för att se var alla sidor länkar till för nya sidor, och hur den hanterar viss API funktionalitet.
+Hämtade alla bilder från figmaskissen som vi behövde till projektet.
+Gjorde klart routingen från App.tsx.
+
 
 	

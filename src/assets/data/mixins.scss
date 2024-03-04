@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$AirbeanBrown: rgba(47, 41, 38, 1);
+$AirbeanDarkgreen: rgba(56, 132, 109, 1);
+$AirbeanLightgreen: rgba(88, 191, 148, 1);
+$AirbeanPink: rgba(243, 228, 225, 1);
+$AirbeanOrange: rgba(229, 103, 78, 1);
+
 @mixin headline-big {
     font-family: 'PT Serif';
     font-size: 42px;
@@ -5,63 +14,63 @@
     line-height: 51.87px, 50.4px;
 }
 
-@mixin headline-small {
+@mixin headline-medium {
     font-family: 'PT Serif';
     font-size: 36px;
     font-weight: 700;
     line-height: 43.2px;
 }
 
-@mixin {
+@mixin headline-small {
     font-family: 'PT Serif';
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
 }
 
-@mixin {
+@mixin lead-big {
     font-family: 'PT Serif';
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;
 }
 
-@mixin {
+@mixin lead-medium {
     font-family: 'PT serif';
     font-size: 23px;
     font-weight: 700;
     line-height: 27.6px;
 }
 
-@mixin {
+@mixin lead-small {
     font-family: 'PT Serif';
     font-size: 22px;
     font-weight: 700;
     line-height: 35.2px, 26.4px;
 }
 
-@mixin {
+@mixin lead-mini {
     font-family: 'Work Sans';
     font-size: 21px;
     font-weight: 400;
     line-height: 25.2px;
 }
 
-@mixin {
+@mixin text-big {
     font-family: 'Work Sans';
     font-size: 16px;
     font-weight: 700;
     line-height: 19.2px;
 }
 
-@mixin {
+@mixin text-medium {
     font-family: 'Work sans';
     font-size: 14px;
     font-weight: 600;
     line-height: 22.4px, 16.8px;
 }
 
-@mixin {
+@mixin  text-small {
     font-family: 'Work Sans';
     font-size: 12px;
     font-weight: 400;
