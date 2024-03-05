@@ -1,9 +1,25 @@
- const  LandingPage = () => {
+import { useNavigate } from 'react-router-dom'
+import './landingpage.scss'
+import { FetchCoffee } from '../../functions/FetchCoffee';
+
+const  LandingPage = () => {
+
+    FetchCoffee();
+    const GoToPage = useNavigate();
+
     return (
         <> 
-            <p>Landingpage</p>
+            <div className="landingpage--wrapper">
+                <figure className='landingpage--leaf landingpage--leaf-left'></figure>
+                <figure className='landingpage--leaf landingpage--leaf-right'></figure>
+                <figure onClick={() => GoToPage('/meny')} className="landingpage--figure">
+                    <img className="landingpage--img" src='src/assets/images/AirbeanLogo.svg' alt="Airebean Logo" />
+                </figure>
+                <h1 className="landingpage--headline">AIR BEAN</h1>
+                <h2 className="landingpage--sub-headline">DRONEDELIVERED COFFEE</h2>
+            </div>
         </>
     )
- }
+}
 
- export default LandingPage
+export default LandingPage

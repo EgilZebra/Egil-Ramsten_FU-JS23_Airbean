@@ -9,6 +9,7 @@ import LandingPage from "./pages/landingpage/LandingPage"
 import AboutPage from "./pages/aboutpage/AboutPage"
 import MenyPage from "./pages/menypage/MenyPage"
 import ProfilePage from "./pages/profilepage/ProfilePage"
+import './index.scss'
 
 const router = createBrowserRouter(
     createRoutesFromElements(

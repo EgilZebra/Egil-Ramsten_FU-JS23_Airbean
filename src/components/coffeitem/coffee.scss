@@ -1,0 +1,46 @@
+@use '../../assets/data/mixins.scss';
+
+.menu-coffee--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 311px;
+}
+.menu-coffee--section {
+    display: flex;
+    flex-direction: row;
+}
+.menu-coffee--button {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    width: 32px;
+    height: 32px;
+    font-size: 28px;
+}
+.menu-coffee--button:hover {
+    cursor: pointer;
+}
+.menu-coffee--info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu-coffee--name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-coffee--name {
+    @include mixins.lead-medium;
+    border-bottom: dotted 1px black;
+    width: 100%;
+}
+.menu-coffee--price {
+    @include mixins.lead-medium;
+    text-align: right;
+    width: 40%
+}
+.menu-coffee--desc {
+    @include mixins.text-small;
+}

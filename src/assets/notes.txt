@@ -89,6 +89,8 @@ API
 		
 		
 Fonts? 
+		width: 375px height: 655, 667, 839, 1061px.
+		
 		PT Serif 	- rubriker
 		Work Sans 	- brödtext, ingress, underrubrik
 
@@ -118,14 +120,20 @@ Fonts?
 
 
 
-Började att göra ett github repo och koppla det med vsCode.
-städade ur all react/vite placeholder kod.
-Gjorde ett GitHub projekt, med kanban board och items/cards på.
-Gjorde alla filer och komponeneter som vi behöver för projektet.
-gjorde filer med constanter som vi kan kalla på, typ API, types och andra.
-Gjorde en flowchart för att se var alla sidor länkar till för nya sidor, och hur den hanterar viss API funktionalitet.
-Hämtade alla bilder från figmaskissen som vi behövde till projektet.
-Gjorde klart routingen från App.tsx.
+1/3 Började att göra ett github repo och koppla det med vsCode.
+1/3 städade ur all react/vite placeholder kod.
+
+4/3 Gjorde ett GitHub projekt, med kanban board och items/cards på.
+4/3 Gjorde alla filer och komponeneter som vi behöver för projektet.
+4/3 gjorde filer med constanter som vi kan kalla på, typ API, types och andra.
+4/3 Gjorde en flowchart för att se var alla sidor länkar till för nya sidor, och hur den hanterar viss API funktionalitet.
+4/3 Hämtade alla bilder från figmaskissen som vi behövde till projektet.
+4/3 Gjorde klart routingen från App.tsx.
+
+5/3 Gjorde Landingpage, löste mixin syntax och några bildproblem.
+5/3 Gjorde Första fetchen för kaffemenyn.
+5/3 skapade Global state som kaffetmenyn soparas i.
+5/3 började göra menypage och caffet som ska vara där.
 
 
 	
