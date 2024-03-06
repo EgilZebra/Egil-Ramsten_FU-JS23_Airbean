@@ -1,0 +1,19 @@
+@use '../../assets/data/mixins.scss';
+
+.menu--wrapper {
+    background-color: mixins.$AirbeanPink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 839px;
+}
+.menu--main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menu--headline {
+    @include mixins.headline-big;
+    text-align: center;
+}

@@ -1,20 +1,19 @@
+import Header from "../../components/Header/Header"
 import { Coffee } from "../../components/coffeitem/Coffee"
+import Footer from "../../components/footer/Footer"
+import './menypage.scss'
 
 const MenyPage = () => {
     return (
-        <>
-            <div>
-                <figure></figure>
-                <button>Nav</button>
-                <button>Cart</button>
-            </div>
-            <div>
-                <h1>Meny</h1>
+        <div className="menu--wrapper">
+            <Header />
+            <div className="menu--main-wrapper">
+                <h1 className="menu--headline">Meny</h1>
                 <Coffee />
             </div>
-        </>
+            <Footer />
+        </div>
     )
 }
-
 
 export default MenyPage

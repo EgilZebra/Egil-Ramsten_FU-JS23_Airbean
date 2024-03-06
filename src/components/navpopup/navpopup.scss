@@ -1,0 +1,50 @@
+@use '../../assets/data/mixins.scss';
+
+.nav--wrapper {
+}
+.nav--button {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    margin-left: 1.5rem; 
+    margin: 1.5rem;
+    position: fixed;
+    border: 0;
+    font-size: 32px;
+}
+.nav--button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px white;
+}
+.nav--options-wrapper {
+    background-color: mixins.$AirbeanBrown;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 100%;
+    gap: 1rem;
+    color: white;
+    background-color: mixins.$AirbeanBrown;
+    position: fixed;
+    z-index: 5;
+}
+.nav--headline {
+    @include mixins.headline-small;
+}
+.nav--headline:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px white;
+}
+.nav--line {
+    background-color: white;
+    width: 48px;
+    height: 1px;
+}
+.hide {
+    display: none;
+}

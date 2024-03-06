@@ -3,7 +3,7 @@
 .menu-coffee--wrapper {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1.2rem;
     width: 311px;
 }
 .menu-coffee--section {
@@ -12,7 +12,7 @@
 }
 .menu-coffee--button {
     border-radius: 50%;
-    background-color: black;
+    background-color: mixins.$AirbeanBrown;
     color: white;
     width: 32px;
     height: 32px;

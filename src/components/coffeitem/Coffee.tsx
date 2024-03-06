@@ -3,7 +3,7 @@ import { menu } from "../../assets/data/Types"
 import './coffee.scss'
 
 export const Coffee  = () => {
-    const menu: Array<Object> = useCoffeeMenu((state) => state.coffee)
+    const menu: Array<menu> = useCoffeeMenu((state) => state.coffee)
     console.log(menu)
     const coffees = menu.flat()
 

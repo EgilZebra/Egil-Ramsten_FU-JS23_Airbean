@@ -10,6 +10,7 @@ import AboutPage from "./pages/aboutpage/AboutPage"
 import MenyPage from "./pages/menypage/MenyPage"
 import ProfilePage from "./pages/profilepage/ProfilePage"
 import './index.scss'
+import { FetchCoffee } from "./functions/FetchCoffee";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,7 +24,7 @@ const router = createBrowserRouter(
 )
 
 function App() {
-
+  FetchCoffee();
   return (
     <>
       <RouterProvider router={router} />

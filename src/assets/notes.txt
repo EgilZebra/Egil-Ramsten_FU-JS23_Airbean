@@ -133,7 +133,7 @@ Fonts?
 5/3 Gjorde Landingpage, löste mixin syntax och några bildproblem.
 5/3 Gjorde Första fetchen för kaffemenyn.
 5/3 skapade Global state som kaffetmenyn soparas i.
-5/3 började göra menypage och caffet som ska vara där.
+5/3 började göra menypage och caffet som ska vara där. mycket styling!
 
 
 	

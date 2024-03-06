@@ -1,0 +1,19 @@
+.header--wrapper {
+    display: flex;
+    width: 100%;
+}
+.header--img {
+    background-image: url('src/assets/images/HeaderLeafsTop.svg');
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.header--cartbutton {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+    margin-right: 2rem;
+}

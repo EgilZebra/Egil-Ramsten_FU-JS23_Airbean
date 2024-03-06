@@ -1,9 +1,9 @@
+import './footer.scss'
 const Footer = () => {
     return (
-        <>
-            <p>footer</p>
-        </>
+        <div className="footer--wrapper">
+            <figure className="footer--img"></figure>            
+        </div>
     )
 }
-
 export default Footer
