@@ -1,8 +1,11 @@
+import Header from "../../components/Header/Header"
+import Footer from "../../components/footer/Footer"
+
 const AboutPage = () => {
     return (
         <>
             <div>
-                <button>Nav</button>
+                <Header />
             </div>
             <div>
                 <h1>Vårt kaffe</h1>
@@ -16,6 +19,7 @@ const AboutPage = () => {
                 <h1>Eva Cortado</h1>
                 <h1>VD & Grundare</h1>
             </div>
+            <Footer />
         </>
     )
 }

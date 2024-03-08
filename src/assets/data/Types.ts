@@ -5,6 +5,7 @@ export type menu = {
     "price": number
 }
 export type order = {
+    "id": number,
     "name": string,
     "price": number
 }

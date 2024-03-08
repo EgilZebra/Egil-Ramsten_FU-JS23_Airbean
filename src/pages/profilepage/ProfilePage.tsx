@@ -1,8 +1,10 @@
+import Header from "../../components/Header/Header"
+
 const ProfilePage = () => {
     return (
         <>
             <div>
-                <button>Navbar</button>
+                <Header />
             </div>
             <div>
                 <figure>

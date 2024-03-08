@@ -135,5 +135,6 @@ Fonts?
 5/3 skapade Global state som kaffetmenyn soparas i.
 5/3 började göra menypage och caffet som ska vara där. mycket styling!
 
-
+6/3 Gjort, menyPage, Header och NavPopup men funktionalitet i NavPage.
+6/3 Ny komponenet CoffeeItem som ligger i menupage. Gjort navpopup och cartpopup(inte färdig).
 	

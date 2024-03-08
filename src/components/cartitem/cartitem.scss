@@ -1,0 +1,52 @@
+@use '../../assets/data/mixins.scss';
+
+
+.cart-item--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+.cart-item--headline {
+    @include mixins.headline-small;
+    color: mixins.$AirbeanBrown;
+}
+.cart-item--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-item--btn {
+    @include mixins.lead-big;
+    width: 248px;
+    height: 55px;
+    background-color: mixins.$AirbeanBrown;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+.cart-item--btn:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+.cart-item--card-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.cart-item--info {
+    display: flex;
+    flex-direction: column;
+}
+.cart-item--name {
+    
+}
+.cart-item--price {}
+.cart-item--quantity {}
+.cart-item--count {}
+.cart-item--card-btn {}
+.cart-item--card-btn:hover{}
+.cart-item--card-btn__increase{}
+.cart-item--card-btn__decrease{}

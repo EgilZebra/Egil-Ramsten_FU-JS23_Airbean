@@ -6,10 +6,10 @@
     border-radius: 50%;
     width: 48px;
     height: 48px;
-    z-index: 10;
-    margin-left: 1.5rem; 
-    margin: 1.5rem;
-    position: fixed;
+    z-index: 5;
+    top: 16px;
+    margin-left: 16px;
+    position: absolute;
     border: 0;
     font-size: 32px;
 }
@@ -19,7 +19,7 @@
 }
 .nav--options-wrapper {
     background-color: mixins.$AirbeanBrown;
-    position: fixed;
+    position: absolute;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -29,9 +29,8 @@
     height: 100%;
     gap: 1rem;
     color: white;
-    background-color: mixins.$AirbeanBrown;
     position: fixed;
-    z-index: 5;
+    z-index: 7;
 }
 .nav--headline {
     @include mixins.headline-small;
@@ -47,4 +46,7 @@
 }
 .hide {
     display: none;
+}
+.btn-active {
+    z-index: 10;
 }

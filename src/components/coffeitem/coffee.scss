@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 1.2rem;
     width: 311px;
+    z-index: 1;
 }
 .menu-coffee--section {
     display: flex;
@@ -17,9 +18,14 @@
     width: 32px;
     height: 32px;
     font-size: 28px;
+    border: none;
 }
 .menu-coffee--button:hover {
     cursor: pointer;
+    opacity: .9;
+}
+.menu-coffee--button:active {
+    border: solid 1px rgba(255, 255, 255, 0);
 }
 .menu-coffee--info-wrapper {
     display: flex;
