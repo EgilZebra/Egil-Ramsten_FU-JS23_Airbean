@@ -11,6 +11,7 @@ import MenyPage from "./pages/menypage/MenyPage"
 import ProfilePage from "./pages/profilepage/ProfilePage"
 import './index.scss'
 import { FetchCoffee } from "./functions/FetchCoffee";
+import StatusPopup from "./components/statuspopup/StatusPopup"
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/menu" element={<MenyPage/>} />
         <Route path="/profile" element={<ProfilePage/>} />
+        <Route path="/orderstatus" element={<StatusPopup/>} />
       </Route>
   )
 )

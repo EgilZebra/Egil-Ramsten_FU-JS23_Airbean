@@ -4,6 +4,7 @@ import './landingpage.scss'
 const  LandingPage = () => {
 
     const GoToPage = useNavigate();
+    
 
     return (
         <> 

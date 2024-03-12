@@ -1,0 +1,45 @@
+@use '../../assets/data/mixins.scss';
+
+.about--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: mixins.$AirbeanPink;
+    height: 1061px;
+    color: mixins.$AirbeanBrown;
+}
+.about--text-wrapper {
+    margin: auto;
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+.about--headline {
+    @include mixins.headline-big;
+    line-height: 50.4px
+}
+.about--lead {
+    @include mixins.text-medium;
+    line-height: 22.4px;
+}
+.about--text {
+    @include mixins.text-small;
+    line-height: 19.2px;
+}
+.about--byline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem
+}
+.about--image {}
+.about--name {
+    @include mixins.lead-small;
+}
+.about--title {
+    @include mixins.text-small;
+}

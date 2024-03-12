@@ -138,3 +138,5 @@ Fonts?
 6/3 Gjort, menyPage, Header och NavPopup men funktionalitet i NavPage.
 6/3 Ny komponenet CoffeeItem som ligger i menupage. Gjort navpopup och cartpopup(inte färdig).
 	
+12/3 Gjort färdigt layout och css för profilepage och Orderstatus. inte funktionalitet.
+12/3 Gjort funktionalitet för att sicka ordrar från CARTpopup och se senast lagda order i status.

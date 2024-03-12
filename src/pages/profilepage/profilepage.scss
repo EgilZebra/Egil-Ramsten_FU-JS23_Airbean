@@ -1,0 +1,32 @@
+@use '../../assets/data/mixins.scss';
+
+.profile--wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: mixins.$AirbeanBrown;
+    width: 375px;
+    height: 667px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.profile--wrapper-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15rem;
+}
+.profile--image {
+
+}
+.profile--name {
+    @include mixins.lead-big;
+}
+.profile--mail {
+    @include mixins.text-medium;
+    line-height: 16.8px;
+    font-weight: 400;
+}
+.profile--history {
+    width: 315px;
+}

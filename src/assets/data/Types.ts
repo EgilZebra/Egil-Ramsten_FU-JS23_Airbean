@@ -5,7 +5,6 @@ export type menu = {
     "price": number
 }
 export type order = {
-    "id": number,
     "name": string,
     "price": number
 }
@@ -13,4 +12,8 @@ export type history = {
     "total": number,
     "orderNr": string,
     "orderDate": string
+}
+export type orderReturn = {
+    'eta': number,
+    'orderNr': string
 }

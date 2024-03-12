@@ -6,19 +6,17 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .cart-item--headline {
     @include mixins.headline-small;
     color: mixins.$AirbeanBrown;
 }
-.cart-item--card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .cart-item--btn {
     @include mixins.lead-big;
     width: 248px;
@@ -35,18 +33,85 @@
 .cart-item--card-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
-.cart-item--info {
+.cart-card--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-self: flex-start;
+    gap: 1rem;
+    max-height: 319px;
+    overflow: auto;
+}
+.cart-card--item-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 311px;
+    justify-content: space-between;
+    height: 40px;
+}
+.cart-card--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.cart-card--name {
+    @include mixins.lead-small;
+    font-size: 20px;
+    line-height: 24px;
+}
+.cart-card--price {
+    @include mixins.text-small;
+    line-height: 15.6px;
+}
+.cart-card--quantity {
     display: flex;
     flex-direction: column;
 }
-.cart-item--name {
-    
+.cart-card--count {
+    @include mixins.text-medium;
+    line-height: 18.2px;
+    text-align: center;
+    margin-top: -.2rem;
+    margin-bottom: -.3rem;
 }
-.cart-item--price {}
-.cart-item--quantity {}
-.cart-item--count {}
-.cart-item--card-btn {}
-.cart-item--card-btn:hover{}
-.cart-item--card-btn__increase{}
-.cart-item--card-btn__decrease{}
+.cart-card--btn {
+    border: solid 1px white;
+    background-color: white;
+}
+.cart-card--btn:hover{
+    cursor: pointer;
+    border: solid 1px mixins.$AirbeanBrown;
+    border-style: dotted;
+}
+
+.cart-card--btn__increase{
+    margin-top: -.2rem;
+}
+.cart-card--btn__decrease{
+}
+
+.cart-total--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 311px;
+}
+.cart-total--info {}
+.cart-total--headline {
+    @include mixins.lead-medium
+}
+.cart-total--lead {
+    @include mixins.text-small;
+    line-height: 15.6px;
+}
+.cart-total--price-wrapper {}
+.cart-total--price {
+    @include mixins.lead-medium
+}

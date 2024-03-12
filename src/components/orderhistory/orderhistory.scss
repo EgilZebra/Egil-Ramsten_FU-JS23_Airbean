@@ -1,0 +1,27 @@
+@use '../../assets/data/mixins.scss';
+
+.history--wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.history--headline {
+    @include mixins.lead-small;
+    line-height: 26.4px;
+}
+.history--total-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: solid 1px white;
+    padding-top: .5rem;
+}
+.history--total-headline {
+    @include mixins.text-medium;
+    line-height: 16.8px;
+    font-weight: 700;
+}
+.history--total-price {
+    @include mixins.text-medium;
+    line-height: 16.8px;
+    font-weight: 700;
+}

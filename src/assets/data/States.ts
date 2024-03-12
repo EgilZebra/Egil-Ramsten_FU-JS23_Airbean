@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { menu, order } from './Types'
+import { menu, order, orderReturn } from './Types'
 
 type coffeMenu = {
     coffee: menu[],
@@ -16,7 +16,8 @@ export const useCoffeeMenu = create<coffeMenu>((set) => ({
 type CoffeeCart = {
     coffee: Array<{item: order, count: number}>,
     addCoffee: (x: order) => void,
-    removeCoffee: (x: order) => void
+    removeCoffee: (x: order) => void,
+    clearCoffee: () => void
 }
 
 export const useCoffeeCart = create<CoffeeCart>((set) => ({
@@ -36,28 +37,27 @@ export const useCoffeeCart = create<CoffeeCart>((set) => ({
     removeCoffee: (newData: order) => {
         set((state) => {
             var coffeeCopy = [...state.coffee];
-            var removeIndex = coffeeCopy.findIndex((coffee) => coffee.item.name === newData.name);
-            if ( removeIndex !== -1 ) {
-                coffeeCopy.splice(removeIndex, 1);
+            var newIndex = coffeeCopy.findIndex((coffee) => coffee.item.name == newData.name)
+            if ( state.coffee[newIndex].count > 1) {
+                coffeeCopy[newIndex].count--;
             } else {
-                coffeeCopy[removeIndex].count--
+                coffeeCopy.splice(newIndex, 1);
             }
             return {coffee: coffeeCopy}
-        })}
+        })},
+    clearCoffee: () => {
+        set(() => ({coffee: []}))
+    }
 }))
 
-type coffeeID = {
-    id: number,
-    increaseId: () => void,
-    resetId: () => void
+export type latestOrder = {
+    order: orderReturn
+    setOrder: (x: orderReturn) => void
 }
 
-export const useCoffeeId = create<coffeeID>((set) => ({
-    id: 0,
-    increaseId: () => {
-        set((state) => ({id: state.id++ }))
-    } ,
-    resetId: () => {
-        set(() => ({id: 0}))
+export const useLastestOrder = create<latestOrder>((set) => ({
+    order: {eta: 0, orderNr: ''},
+    setOrder: (newOrder: orderReturn) => {
+        set(() => ({order:newOrder}))
     }
 }))

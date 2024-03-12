@@ -5,7 +5,12 @@ import { useCoffeeCart } from '../../assets/data/States';
 
 const CartPopup = () => {
     const [cartState, setCartState] = useState({ cartshow: ' hide', btnactive: '', backround: ''})
-    const cartItems = useCoffeeCart((state) => state.coffee.length);
+    
+    const cartItems = useCoffeeCart((state) => 
+        state.coffee.reduce((total, coffee) => 
+        total + coffee.count, 0)
+    );
+
     const showCart = () => {
         if ( cartState.btnactive == '') {
             setCartState( { cartshow: '', btnactive: ' btn-active', backround: ' background-faded'} );
@@ -13,11 +18,12 @@ const CartPopup = () => {
             setCartState({ cartshow: ' hide', btnactive: '', backround: ''});
         }
     }
+
     return (
         <div className={`cart--wrapper${cartState.backround}`}>
             <div className={`cart--button-wrapper${cartState.btnactive}`}>
-                <div className='cart--button-counter'>{(cartItems > 0) ? cartItems : ''}</div>
-                <button className={`cart--button`} onClick={showCart}><img src="/src/assets/images/CartIcon.svg" alt="cart" /></button>
+                {(cartItems > 0) ? <div className='cart--button-counter'>{cartItems}</div> : null}
+                <button className='cart--button' onClick={showCart}><img src="/src/assets/images/CartIcon.svg" alt="cart" /></button>
             </div>
             <div className={`cart--options-wrapper${cartState.cartshow}`}>
                 <figure className='cart--options-pointer'></figure>
