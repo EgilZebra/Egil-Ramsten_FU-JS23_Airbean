@@ -1,5 +1,5 @@
 {
-  "homepage": "https://egilzebra.github.io/Egil-Ramsten_FU-JS23_Airbean/" ,
+  "homepage": "https://egilzebra.github.io/Egil-Ramsten_FU-JS23_Airbean/",
   "name": "airbean",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.2",
