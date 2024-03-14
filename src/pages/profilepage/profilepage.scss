@@ -7,26 +7,38 @@
     width: 375px;
     height: 667px;
     align-items: center;
-    justify-content: space-around;
     color: white;
+}
+.profile--content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .profile--wrapper-top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -15rem;
+    margin-top: 8rem;
 }
 .profile--image {
-
+    width: 94px;
+    height: 94px;
+    margin-bottom: 1rem
 }
 .profile--name {
     @include mixins.lead-big;
+    color: rgba(255, 255, 255, 0.8);
 }
 .profile--mail {
     @include mixins.text-medium;
     line-height: 16.8px;
     font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
 }
 .profile--history {
     width: 315px;
+    justify-self: flex-end;
+    margin-bottom: 5rem;
+    // max-height: 300px; 
 }

@@ -6,25 +6,26 @@ import './cartitem.scss'
 
 export const Cartitem = () => {
     const coffeOrder = useCoffeeCart((state) => state.coffee);
-    const addCoffee = useCoffeeCart((state) => state.addCoffee);
-    const removeCoffee = useCoffeeCart((state) => state.removeCoffee);
-    const GoToPage = useNavigate()
-    const setOrder = useLastestOrder((state: latestOrder) => state.setOrder)
-    const clearCoffee = useCoffeeCart((state) => state.clearCoffee)
+    const addCoffee: Function = useCoffeeCart((state) => state.addCoffee);
+    const removeCoffee: Function = useCoffeeCart((state) => state.removeCoffee);
+    const GoToPage: Function = useNavigate()
+    const setOrder: Function = useLastestOrder((state: latestOrder) => state.setOrder)
+    const clearCoffee: Function = useCoffeeCart((state) => state.clearCoffee)
 
     const totalPrice = useCoffeeCart((state) => 
         state.coffee.reduce((total, coffee) => 
         total + (coffee.count * coffee.item.price), 0)
     );
-
     const OrderCoffee = async() => {
         const order: Array<Object> = [];
+        const getToken: string |null = sessionStorage.getItem('userToken');
+        const token: string = (getToken !== null) ? getToken : ''
         coffeOrder.forEach(coffe => {
             for (let i=0; i<coffe.count; i++) {
             order.push(coffe.item);
             }
         });
-        let lastOrder: orderReturn = await SendOrder(order)
+        let lastOrder: orderReturn = await SendOrder(order, token)
         setOrder(lastOrder);
         console.log(lastOrder)
         GoToPage('/orderstatus')
@@ -66,7 +67,6 @@ export const Cartitem = () => {
                     </div>
                 </div>
             </div>
-            {/* send the order to teh api */}
             <button className="cart-item--btn" onClick={() => OrderCoffee()}>Take my money!</button>
         </div>
     )

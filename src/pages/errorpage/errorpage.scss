@@ -1,0 +1,59 @@
+@use '../../assets/data/mixins.scss';
+
+.error--wrapper {
+    background-color: mixins.$AirbeanBrown;
+    width: 375px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    color: mixins.$AirbeanPink;
+    text-align: center;
+}
+.error--top {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.error--headline {
+    @include mixins.headline-big;
+}
+.error--status-wrapper {
+    border: dotted 1px mixins.$AirbeanPink;
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.error--status {
+    @include mixins.lead-big;
+}
+.error--status-text {
+    @include mixins.lead-big;
+}
+.error--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.error--text {
+    @include mixins.text-medium;
+}
+.error--home-btn {
+    @include mixins.text-big;
+    height: 55px;
+    width: 184px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 2rem;
+    z-index: 1;
+}
+.error--home-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px white;
+}

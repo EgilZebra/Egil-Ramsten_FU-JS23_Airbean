@@ -3,17 +3,22 @@
 .history--wrapper {
     display: flex;
     flex-direction: column;
+    color: rgba(255, 255, 255, 0.5);
 }
 .history--headline {
     @include mixins.lead-small;
     line-height: 26.4px;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .history--total-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: solid 1px white;
+    border-top: solid 1px rgba(255, 255, 255, 0.6);
     padding-top: .5rem;
+    color: white;
 }
 .history--total-headline {
     @include mixins.text-medium;
@@ -24,4 +29,48 @@
     @include mixins.text-medium;
     line-height: 16.8px;
     font-weight: 700;
+}
+.history--order {
+    max-height: 270px;
+    overflow: auto;
+}
+.order--wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid .5px rgba(255, 255, 255, 0.08);
+    gap: .5rem;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+}
+.order--top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.order--number {
+    @include mixins.text-medium;
+    font-weight: 700;
+}
+.order--date {
+    @include mixins.text-medium;
+}
+.order--bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.order--text {
+    @include mixins.text-small;
+}
+.order--sum {
+    @include mixins.text-small;
+}
+.landingpage--login {
+    position: absolute;
+    top: 0;
+    margin-left: -30px;
+}
+.hidden {
+    display: none;
 }

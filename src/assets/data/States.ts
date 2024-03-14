@@ -61,3 +61,16 @@ export const useLastestOrder = create<latestOrder>((set) => ({
         set(() => ({order:newOrder}))
     }
 }))
+
+export type currentUser = {
+    username: string,
+    password: string,
+    setCurrentUser: (newUser: { 'username': string, 'password': string}) => void
+}
+
+export const useCurrentUser = create<currentUser>((set) => ({
+    username: '',
+    password: '',
+    setCurrentUser: ( newUser: { 'username': string, 'password': string} ) => {
+        set(() => ({username: newUser.username, password: newUser.password}))}
+}))

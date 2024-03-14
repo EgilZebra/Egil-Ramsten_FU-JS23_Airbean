@@ -7,7 +7,7 @@ import './coffee.scss'
 export const Coffee  = () => {
     const menu: Array<menu> = useCoffeeMenu((state) => state.coffee)
     console.log(menu)
-    const coffees = menu.flat()
+    const coffees: menu[] = menu.flat()
     const coffeCart = useCoffeeCart((state) => state.addCoffee)
     const selectItem = (coffee: menu) => {
         const toOrder: order = { name: coffee.title , price: coffee.price };

@@ -17,3 +17,7 @@ export type orderReturn = {
     'eta': number,
     'orderNr': string
 }
+export type user = {
+    'username': string,
+    'password': string
+}

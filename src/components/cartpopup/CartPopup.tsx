@@ -23,7 +23,7 @@ const CartPopup = () => {
         <div className={`cart--wrapper${cartState.backround}`}>
             <div className={`cart--button-wrapper${cartState.btnactive}`}>
                 {(cartItems > 0) ? <div className='cart--button-counter'>{cartItems}</div> : null}
-                <button className='cart--button' onClick={showCart}><img src="/src/assets/images/CartIcon.svg" alt="cart" /></button>
+                {(cartItems > 0) ? <button className='cart--button' onClick={showCart}><img src="/src/assets/images/CartIcon.svg" alt="cart" /></button>  : null}
             </div>
             <div className={`cart--options-wrapper${cartState.cartshow}`}>
                 <figure className='cart--options-pointer'></figure>
