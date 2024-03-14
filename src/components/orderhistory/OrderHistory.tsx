@@ -50,7 +50,7 @@ export const OrderHistory = () => {
 
     return (
         <div className='history--wrapper'>
-            <div style={{zIndex: toggle[1]}} className={`landingpage--login ${toggle[0]}`}>
+            <div style={{zIndex: toggle[1]}} className={`history--login ${toggle[0]}`}>
                     <ProfilePopup />
                 </div>
             <h1 className='history--headline'>Orderhistorik</h1>

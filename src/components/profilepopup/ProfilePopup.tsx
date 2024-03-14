@@ -13,6 +13,7 @@ const ProfilePopup = () => {
     const setCurrentUser = useCurrentUser((state) => state.setCurrentUser)
     const GoToPage = useNavigate()
     const [toggleValues, setToggleValues] = useState(['','hide'])
+    const [checked, setChecked] = useState(false)
 
     const sendUser = async() => {
         const login: user = {'username': userName, 'password': userMail}
@@ -51,6 +52,10 @@ const ProfilePopup = () => {
         GoToPage('/menu')
     }
 
+    const handleCheck = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setChecked(e.target.checked)
+    }
+
     return (
         <div className='signin--background'>
             <div className={`signin--wrapper ${toggleValues[1]}`}>
@@ -80,10 +85,10 @@ const ProfilePopup = () => {
                     onChange={e => setUserMail(e.target.value)}
                     />
                 </div>
-                <p className='signin--check'><input type='radio'/> GDPR ok!</p>
+                <p className='signin--check'><input id='GDPR' type='checkbox' checked={checked} onChange={handleCheck}/> GDPR ok!</p>
                 </div>
                 <div className='signin--btn-wrapper'>
-                    <button onClick={sendUser} className='signin--btn-login'>Create!</button>
+                    <button onClick={checked ? sendUser : () => alert('Det går inte att skapa ett konto utan att godkänna GDPR')} className='signin--btn-login'>Create!</button>
                     <button onClick={loginUser} className='signin--btn-login'>Log in!</button>
                 </div>
             </div>
